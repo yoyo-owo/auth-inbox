@@ -1,0 +1,28 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "auth-inbox"
+
+main = "src/index.ts"
+compatibility_date = "2024-10-04"
+compatibility_flags = ["nodejs_compat"]
+
+#routes = [
+# { pattern = "yoyonet.qzz.io", custom_domain = true },
+#]
+
+[observability]
+enabled = true
+
+[vars]
+UseBark = "true"
+
+barkUrl = "https://api.day.app/X6xtAr7nSY8Nt6cNBBtxX3/Body Text"
+barkTokens = "[f00a14daaaf5051d832c101230a37729958fa4313cca8ca31b4144b9b1bd7805]"
+FrontEndAdminID = "admin-yoyo"
+FrontEndAdminPassword = "password-yoyo"
+
+GoogleAPIKey = "AIzaSyAgQoKQNR2c2YmdYn9xVjmEC_zdat3f_7A"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "inbox-d1-oao"
+database_id = "74ca7efa-1da2-4e19-abbd-3fc2c062d3ea"
